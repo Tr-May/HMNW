@@ -1,0 +1,20 @@
+prerequisite => vscode, node module
+
+js => 
+typed language => 
+strongly-typed,
+String name = "Jenny";
+name = 34; //type error
+int age = 34;
+age = "thirty-four";//error
+
+loosely-typed
+let name = "jenny"; // string
+typeof name; //string
+...
+name = 34; // number
+typeof name; //number
+
+name = true;//boolean
+typeof name; //boolean
+

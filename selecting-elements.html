@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM : Selecting Elements</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-around;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>DOM : Selecting Elements</h1>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <button onclick="changeColor()">Change Color</button>
+
+    <script>
+      function changeColor() {
+        let color = prompt("enter color", "color code/ name here!");
+        // console.log(color);
+        let element = document.querySelector(".box");
+        // console.log(elements);
+        element.style.backgroundColor = color;
+        element.style.borderRadius = "10px";
+      }
+    </script>
+  </body>
+</html>
+
+<!-- 
+getElementById()
+getElementsByName()
+getElementsByTagName()
+getElementsByClassName()
+querySelector()
+querySelectorAll() 
+-->
